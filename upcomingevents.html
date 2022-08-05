@@ -13,10 +13,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <title>Home</title>
+    <title>Upcoming Events</title>
 </head>
 <body>
-    <header  class="d-flex flex-wrap justify-content-around align-items-center "> 
+    <header  class="d-flex flex-wrap justify-content-around align-items-center ">
       <div class="cajaNav d-flex">
         <nav class="navbar navbar-expand-md">
         <div class="container-fluid ">
@@ -26,10 +26,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link btnNav" href="#">Home</a>
+                <a class="nav-link btnNav" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link btnNav" href="./upcomingevents.html">Upcoming Events</a>
+                <a class="nav-link btnNav" href="#">Upcoming Events</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link btnNav" href="./pastevents.html">Past Events</a>
@@ -45,68 +45,54 @@
         </div>
         </nav>
       </div>
-      <h2 class="fw-bold fst-italic m-2">Amazing Events</h2>
-      <img class="logo m-2" src="./img/logotarea.png" alt="logo">
+        <!-- <nav class="navbar">
+            <form class="container-fluid justify-content-center p-1">
+                <a href="./index.html" class="btn me-2 btnNav" type="button">Home</a>
+                <a href="#" class="btn me-2 btnNav" type="button">Upcoming Events</a>
+                <a href="./pastevents.html" class="btn me-2 btnNav" type="button">Past Events</a>
+                <a  href="./contact.html" class="btn me-2 btnNav" type="button">Contact</a>
+                <a href="./stats.html" class="btn me-2 btnNav" type="button">Stats</a>
+            </form>
+        </nav> -->
+        <h2 class="fw-bold fst-italic m-2">Amazing Events</h2>
+        <img class="logo m-2" src="./img/logotarea.png" alt="logo">
     </header>
     <main">
         <div class=" d-flex justify-content-between align-items-center p-4 titulo">
-            <a class="titulo2" href="./stats.html"><i class="fa-solid fa-circle-chevron-left"></i></a>
-            <h1>Home</h1>
-            <a class="titulo2" href="./upcomingevents.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+            <a class="titulo2" href="./index.html"><i class="fa-solid fa-circle-chevron-left"></i></a>
+            <h1>Upcoming Events</h1>
+            <a class="titulo2" href="./pastevents.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
         </div>
         <div class="d-flex flex-row flex-wrap justify-content-between align-items-center">
-            <div id= "checkbox"  class="d-flex ps-4 category">
-              <!-- espacio checkbox -->
+            <div id= "checkbox" class="d-flex ps-4 category">
+          <!-- espacio checkbox -->
             </div>
             <div class="cajaBsc p-2">
-                <nav class="navbar">
-                    <div class="container-fluid">
-                        <div class="d-flex" role="search">
-                        <input id="search" class="me-2 search1" type="search" placeholder="Events" aria-label="Search">
-                        <button class="btn search2" id="buscador" >Search</button>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+              <nav class="navbar">
+                  <div class="container-fluid">
+                      <div class="d-flex" role="search">
+                      <input id="search" class="me-2 search1" type="search" placeholder="Events" aria-label="Search">
+                      <button class="btn search2" id="buscador" >Search</button>
+                      </div>
+                  </div>
+              </nav>
+          </div>
         </div>
         <div id="cajacards" class="cajacards d-flex flex-wrap align-items-around justify-content-around p-4">
-          <!-- espacio cards -->
+          <!-- espacio cards -->  
         </div>
     </main>
     <footer class="d-flex justify-content-around align-items-center flex-wrap">
-      <div>
-        <a class="redes" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-        <a class="redes" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-        <a class="redes" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
-        <p class="txtfooter fst-italgitic">Cohort 32 - Fullstack MERN - MindHub</p>
-  </footer>
+        <div>
+            <a class="redes" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="redes" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a class="redes" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+          <p class="txtfooter fst-italic">Cohort 32 - Fullstack MERN - MindHub</p>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="./data.js"></script>
-<script src="./index.js"></script>
+<script src="./upcomingevents.js"></script>
 </body>
 </html>
-
-
-
-
-<!-- function filtroFinal(){
-  let total = []
-  
-  // if (textoIngresado!=="" && checkeo.length>0 ){
-    // total.push(datos.filter(dato=>checkeo.some(ver=>ver === dato.name))) &&
-    // total.push(datos.filter(dato=> dato.name.toLowerCase().includes(textoIngresado.toLowerCase())));
-  
- if (textoIngresado=="" && checkeo.length>0 ){
-  total = datos.filter(dato=>checkeo.some(ver=>ver === dato.category))
-  }   
-  // } else if (textoIngresado=="" && checkeo.length===0 ){
-  // total = datos.filter(dato=> dato.name.toLowerCase().includes(textoIngresado.toLowerCase()));
-  // imprimeCards(total)
-  // }else{
-  //   imprimeCards(datos)
-  // }
-    imprimeCards(total)
-  }
-filtroFinal()  -->
