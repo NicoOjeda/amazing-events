@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu SA Beginner', cursive;
+}
+/* .colores{
+color: #F7C1BB ;
+color: #4e5157;
+color: #D81159;
+color: #559CAD;
+} */
+body{
+    background-image: url(./img/a-book-3051871_1920.jpg);
+    background-size: cover;
+    color: black;
+}
+header{
+    min-height: 12vh;
+    background-color: rgba(0, 0, 0, 0.575);
+    color:  #D81159;
+    width: 100%;
+}
+.logo{
+    height: 8vh;
+}
+.cajaNav{
+    width: 100%;
+    height: 6vh;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+.btnNav{
+    color: #d43a73;
+    font-size: 22px;
+    text-decoration: underline;
+    margin-top: 0.2rem;
+    padding: 0;
+}
+.btnNav:hover{
+    font-weight: bold;
+    color: #F7C1BB ;
+}
+
+.titulo,.titulo2{
+    background-color: #d43a73 ;
+    height: 10vh;
+    color: #353A47;
+    font-size: 40px;   
+}
+.titulo2:hover{
+    font-weight: bolder;
+    color: #F7C1BB;
+}
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.check1{
+    color: #353A47;
+    font-weight: bolder;
+}
+.check2{
+    background-color:#D81159 ;
+    box-shadow: 4px 4px 4px #f7c1bb73 ;
+}
+.form-check-input:checked{
+    background-color: #353A47;
+    border-color: #D81159 ;
+    box-shadow: 5px 5px #f7c1bb73 ;
+}
+.search1{
+    background-color:#F7C1BB;
+    color: #D81159 ;
+    box-shadow: 5px 5px #f7c1bb73 ;
+    border: 1px solid#D81159;
+    border-radius: 6px;
+    width: 16vw;
+    padding-left: 1rem;
+}
+.search1:hover{
+    background-color: #F7C1BB;
+    color:  #353A47 ;
+    box-shadow: 5px 5px #f7c1bb73 ;
+    border: 1px solid #D81159 ;
+    font-weight: bold;
+}
+.card{
+    height: 75vh;
+    margin: 0.5rem;
+    border: 1px solid #D81159 ;
+    background-color: rgba(0, 0, 0, 0.76);
+    color:  #D81159 ;
+}
+.card-body{
+    min-height: 38vh;
+}
+.imgcard{
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+}
+.cajacards{
+    min-height: 100vh; 
+}
+.search2{
+    background-color:  #d43a73;
+    color:  #353A47;
+    box-shadow: 1px 1px 1px #f7c1bb73 ;
+    border: 1px solid  #353A47 ;
+    font-weight: bold;
+}
+.search2:hover{
+    background-color:#353A47;
+    color:  #D81159;
+    font-weight: bolder;
+}
+.cajaform{
+    width: 50%;
+    background-color: aqua;
+    min-height: 65vh;
+    background-color: rgba(0, 0, 0, 0.76);
+    color:  #d43a73;
+    font-size: 20px;
+    border-radius: 6px;
+}
+.cajaform:active{
+    background-color: #0a0b0e;
+}
+main{
+    min-height: 80vh;
+}
+footer{
+    background-color: #d43a73;
+    min-height: 8vh;
+    color: black;
+}
+.redes{
+    color: #353A47;
+    font-size: 26px;
+    padding: 0.5rem;
+}
+.redes:hover{
+    font-weight: bolder;
+    color: #F7C1BB;
+}
+p{
+    margin: 0;
+}
+textarea{
+    resize: none;
+}
+.search3{
+    background-color:#F7C1BB;
+    color: #D81159 ;
+    box-shadow: 5px 5px #f7c1bb73 ;
+    border: 1px solid#D81159;
+    width: 100% !important;
+    border-radius: 6px;
+    padding: 0.1rem;
+}
+.search3:hover{
+    background-color: #F7C1BB;
+    color:  #353A47 ;
+    box-shadow: 5px 5px #f7c1bb73 ;
+    border: 1px solid #D81159 ;
+    font-weight: bold;
+}
+.cajatabla{
+    width: 100%;
+    min-height: 70vh;
+    padding: 0.5rem;
+}
+.tablestats{
+    background-color:#353a47c0 ;
+    width: 80%;
+    border: 1px solid #D81159
+}
+th,td{
+    border: 1px solid #D81159;
+    width: 30%;
+    text-align: center;
+}
+.imgcard2{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cardbig{
+    width: 70%;
+}
+.cajacard2{
+    width: 60%;
+}
+.cajatexto{
+    width: 40%;
+    font-size: 18px;
+}
+.txttable{
+    text-align: start;
+    background-color: #353A47;
+    color:#d43a73;
+    padding-left: 1rem;
+    font-size: 18px;
+}
+.txtfooter{
+    font-size: 20px;
+}
+.navbar-toggler{
+    background:#d43a73;
+}
+.noEncontrado{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.primeraletra:first-letter{
+    text-transform: uppercase;
+}
+@media (max-width: 992px) {
+    nav{
+        width: 100%;
+    }
+    .cardbig{
+        width: 80%;
+    }
+    .cajacard2{
+        width: 50%;
+    }
+    .cajatexto{
+        width: 50%;
+    }
+}
+@media (max-width: 767px){
+    .category{
+        flex-wrap: wrap;
+    }
+    .search1{
+        height: 6vh;
+        width: 25vw;
+    }
+    .search2{
+        height: 6vh;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .titulo2{
+        font-size: 30px;
+    }
+    .cardbig{
+        width: 97%;
+    }
+    .cajaform{
+        width: 70%;
+    }
+    .tablestats{
+        width: 90%;
+    }
+    .titulo,.titulo2{
+        height: 8vh;
+    }
+    .btnNav{
+        background-color:#db2c6ce7;
+        color: #353A47;
+        width: 30%;
+        z-index: 1;
+        text-decoration: none;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+    .cajaBsc{
+        z-index: -1;
+    }
+    .cajaNav{
+        border-radius: 6px;
+        z-index: 1;
+    }
+    
+}
+@media (max-width: 576px) {
+    form>a{
+        height: 6vh;
+        padding-bottom: 1vh;
+    }
+    .redes{
+        font-size: 22px;
+        padding: 0.3rem;
+    }
+    .txtfooter{
+        font-size: 18px;
+        text-align: center;
+    }
+    .cajacard2{
+        display: none;
+    }
+    .cajatexto{
+        width: 100%;
+    }
+    .cajaform{
+        width: 90%;
+    }
+    .tablestats{
+        width: 100%;
+    }
+    .txttable{
+        font-size: 16px;
+    }
+    .btnNav{
+        width: 45%;
+    }
+    .search1{
+        width: 30vh;
+    }
+}
+@media (max-width: 375px) {
+    .search1{
+        height: 6vh;
+        width: 40vw;
+    }
+    .btnNav{
+        width: 50%;
+    }
+}
