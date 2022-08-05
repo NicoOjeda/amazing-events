@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/91dadb00af.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Home</title>
+</head>
+<body>
+    <header  class="d-flex flex-wrap justify-content-around align-items-center "> 
+      <div class="cajaNav d-flex">
+        <nav class="navbar navbar-expand-md">
+        <div class="container-fluid ">
+          <button class="navbar-toggler navHamb" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link btnNav" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btnNav" href="./upcomingevents.html">Upcoming Events</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link btnNav" href="./pastevents.html">Past Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btnNav" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btnNav" href="./stats.html">Stats</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+      </div>
+      <h2 class="fw-bold fst-italic m-2">Amazing Events</h2>
+      <img class="logo m-2" src="./img/logotarea.png" alt="logo">
+    </header>
+    <main">
+        <div class=" d-flex justify-content-between align-items-center p-4 titulo">
+            <a class="titulo2" href="./stats.html"><i class="fa-solid fa-circle-chevron-left"></i></a>
+            <h1>Home</h1>
+            <a class="titulo2" href="./upcomingevents.html"><i class="fa-solid fa-circle-chevron-right"></i></a>
+        </div>
+        <div class="d-flex flex-row flex-wrap justify-content-between align-items-center">
+            <div id= "checkbox"  class="d-flex ps-4 category">
+              <!-- espacio checkbox -->
+            </div>
+            <div class="cajaBsc p-2">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="d-flex" role="search">
+                        <input id="search" class="me-2 search1" type="search" placeholder="Events" aria-label="Search">
+                        <button class="btn search2" id="buscador" >Search</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="cajacards" class="cajacards d-flex flex-wrap align-items-around justify-content-around p-4">
+          <!-- espacio cards -->
+        </div>
+    </main>
+    <footer class="d-flex justify-content-around align-items-center flex-wrap">
+      <div id="footer">
+        <a class="redes" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a class="redes" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a class="redes" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+        <p class="txtfooter fst-italic">Cohort 32 - Fullstack MERN - MindHub</p>
+  </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="./data.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- function filtroFinal(){
+  let total = []
+  
+  // if (textoIngresado!=="" && checkeo.length>0 ){
+    // total.push(datos.filter(dato=>checkeo.some(ver=>ver === dato.name))) &&
+    // total.push(datos.filter(dato=> dato.name.toLowerCase().includes(textoIngresado.toLowerCase())));
+  
+ if (textoIngresado=="" && checkeo.length>0 ){
+  total = datos.filter(dato=>checkeo.some(ver=>ver === dato.category))
+  }   
+  // } else if (textoIngresado=="" && checkeo.length===0 ){
+  // total = datos.filter(dato=> dato.name.toLowerCase().includes(textoIngresado.toLowerCase()));
+  // imprimeCards(total)
+  // }else{
+  //   imprimeCards(datos)
+  // }
+    imprimeCards(total)
+  }
+filtroFinal()  -->
