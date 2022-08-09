@@ -268,9 +268,7 @@ th,td{
         padding: 0.5rem;
         font-weight: bold;
     }
-    .cajaBsc{
-        z-index: -1;
-    }
+    
     .cajaNav{
         border-radius: 6px;
         z-index: 1;
