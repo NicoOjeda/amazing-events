@@ -1,3 +1,9 @@
+fetch("https://amazing-events.herokuapp.com/api/events")
+.then((res)=>res.json()) //me lo convierte a json
+.then((data)=> {
+console.log(data);
+
+
 let datos = data.events;
 let cajaCards = document.getElementById("cajacards");
 let btnBuscador = document.getElementById("buscador");
@@ -18,7 +24,6 @@ function imprimeCards(array){
   cajaCards.innerHTML= ""
   if(array.length>0){
   array.forEach((dato)=>{
-    console.log(today);
     if(parseInt(dato.date) == today){
     let card = document.createElement("div")
     card.innerHTML =`<div class="card" style="width: 18rem;">
@@ -37,7 +42,7 @@ function imprimeCards(array){
   }
 })
 } else {
-  cajacards.innerHTML= `<p class="noEncontrado">No se encontraron resultados</p>`
+  cajacards.innerHTML= `<p class="noEncontrado">No results found</p>`
 }
 }
 
@@ -89,3 +94,5 @@ function filtrarPorCategoria(arrayDatos) {
   // sino devuelvo directamente el array sin filtrar
   return arrayDatos
 }
+})
+.catch( (error) => console.log(error))
