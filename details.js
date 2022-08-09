@@ -1,9 +1,15 @@
+fetch("https://amazing-events.herokuapp.com/api/events")
+.then((res)=>res.json()) //me lo convierte a json
+.then((data)=> {
+console.log(data);
+
+
 let datos = data.events;
 console.log(window);
 
 const queryString = location.search
 const params = new URLSearchParams(queryString) 
-const id = parseInt(params.get("id"))
+const id = params.get("id")
 
 console.log(id);
 
@@ -25,3 +31,5 @@ cajaBig.innerHTML = `<div class="cajacard2 p-1">
 <p class="card-text p-1">Price: ${persona.price}</p>
 </div>`
 
+})
+.catch( (error) => console.log(error))
