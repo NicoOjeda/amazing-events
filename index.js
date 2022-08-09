@@ -1,8 +1,14 @@
-let datos = data.events;
-let cajaCards = document.getElementById("cajacards");
-let btnBuscador = document.getElementById("buscador");
-let textoCapturado = document.getElementById("search");
-let cajaCheck = document.getElementById("checkbox")
+fetch("https://amazing-events.herokuapp.com/api/events")
+.then((res)=>res.json()) //me lo convierte a json
+.then((data)=>{
+console.log(data);
+  
+  let datos = data.events;
+  let cajaCards = document.getElementById("cajacards");
+  let btnBuscador = document.getElementById("buscador");
+  let textoCapturado = document.getElementById("search");
+  let cajaCheck = document.getElementById("checkbox")
+
 
 // imprime todas las cards
 imprimeCards(datos)
@@ -36,7 +42,7 @@ function imprimeCards(array){
   cajaCards.appendChild(card)
   })
 } else {
-  cajacards.innerHTML= `<p class="noEncontrado">No se encontraron resultados</p>`
+  cajacards.innerHTML= `<p class="noEncontrado">No results found</p>`
 }
 }
 
@@ -89,4 +95,5 @@ function filtrarPorCategoria(arrayDatos) {
   // sino devuelvo directamente el array sin filtrar
   return arrayDatos
 }
-
+})
+.catch( (error) => console.log(error))
