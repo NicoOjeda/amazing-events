@@ -1,7 +1,7 @@
 fetch("https://amazing-events.herokuapp.com/api/events")
 .then((res)=>res.json()) //me lo convierte a json
 .then((data)=>{
-
+console.log(data);
 let datos = data.events
 console.log(datos);
 let fechaActual = data.currentDate
@@ -14,6 +14,7 @@ console.log(arrEventosPasados);
 //eventos futuros
 let categoryAssistance = arrEventosFuturos.map(eventos => eventos.category)
 let categoryFuture = new Set(categoryAssistance)
+console.log(categoryFuture);
 
 //eventos pasados
 let categoryAssistance2 = arrEventosPasados.map(eventos => eventos.category)
@@ -28,6 +29,7 @@ arrEventosPasados.map(eventos => {
         perAssist: (eventos.assistance * 100 / eventos.capacity).toFixed(2)
     })
 })
+console.log(percentaje2);
 let max = percentaje2.sort((a, b) => b.perAssist - a.perAssist)[0]
 
 let min = percentaje2.sort((a, b) => a.perAssist - b.perAssist)[0]
