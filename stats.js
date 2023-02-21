@@ -1,10 +1,10 @@
-fetch("https://amazing-events.herokuapp.com/api/events")
+fetch("https://amazing-events-back.up.railway.app/event")
 .then((res)=>res.json()) //me lo convierte a json
 .then((data)=>{
-console.log(data);
-let datos = data.events
-console.log(datos);
-let fechaActual = data.currentDate
+// console.log(data);
+let datos = data.response
+// console.log(datos);
+let fechaActual = "2022-01-01"
 
 // comparo fechas y saco futuras y pasadas
 let arrEventosFuturos = datos.filter(eventoFuturo=> eventoFuturo.date > fechaActual)
@@ -19,7 +19,6 @@ console.log(categoryFuture);
 //eventos pasados
 let categoryAssistance2 = arrEventosPasados.map(eventos => eventos.category)
 let categoryPast = new Set(categoryAssistance2)
-
 
 let percentaje2 = []
 
@@ -49,7 +48,6 @@ div2.innerHTML = `<td>${max.eventos}: ${max.perAssist}%</td>
 <td>${capacity.name}: ${capacity.capacity}</td>`
 filas2.appendChild(div2)
 
-
 // parte 2 de la tabla
 let filas = document.getElementById("upcoming")
 categoryFuture.forEach(elemento=>{
@@ -69,7 +67,6 @@ div.innerHTML = `<td>${elemento}</td>
 filas.appendChild(div)
 })
 
-
 // parte 3 de la tabla 
 let filasw = document.getElementById("past")
 categoryPast.forEach(elemento=>{
@@ -88,7 +85,6 @@ div.innerHTML = `<td>${elemento}</td>
 <td>${percentage}%</td>`
 filasw.appendChild(div)
 })
-
 
 })
 .catch( (error) => console.log(error))
