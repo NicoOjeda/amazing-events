@@ -1,9 +1,9 @@
-fetch("https://amazing-events.herokuapp.com/api/events")
+fetch("https://amazing-events-back.up.railway.app/event")
 .then((res)=>res.json()) //me lo convierte a json
 .then((data)=>{
 console.log(data);
   
-  let datos = data.events;
+  let datos = data.response;
   let cajaCards = document.getElementById("cajacards");
   let btnBuscador = document.getElementById("buscador");
   let textoCapturado = document.getElementById("search");
@@ -85,11 +85,11 @@ function filtrarPorCategoria(arrayDatos) {
   let arrayCheck = Array.from(checkCategorias)
   let checksCambiados = arrayCheck.filter(check=>check.checked)
   let categorias = checksCambiados.map(checksCambiado=> checksCambiado.value) 
-  console.log(categorias)
+  // console.log(categorias)
   // si la categoria no esta vacia las filtro y me fijo si dato.category coincide con algun elemento de categorias
   if(categorias.length>0){
     let datosFiltrados = arrayDatos.filter(dato=>categorias.includes(dato.category)) 
-    console.log(datosFiltrados);
+    // console.log(datosFiltrados);
     return datosFiltrados
   }
   // sino devuelvo directamente el array sin filtrar
