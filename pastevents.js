@@ -1,16 +1,15 @@
-fetch("https://amazing-events.herokuapp.com/api/events")
+fetch("https://amazing-events-back.up.railway.app/event")
 .then((res)=>res.json()) //me lo convierte a json
 .then((data)=> filtrar(data)) 
 
 let filtrar = (data)=>{
 
-
-let datos = data.events;
+let datos = data.response;
 let cajaCards = document.getElementById("cajacards");
 let btnBuscador = document.getElementById("buscador");
 let textoCapturado = document.getElementById("search");
 let cajaCheck = document.getElementById("checkbox")
-let today = parseInt(data.currentDate)
+let today = parseInt("2022-01-01")
 
 imprimeCards(datos)
 
@@ -46,9 +45,6 @@ function imprimeCards(array){
   cajacards.innerHTML= `<p class="noEncontrado">No results found</p>`
 }
 }
-
-
-
 
 // filtra por texto
 function buscadorTexto(textoCapturado,arrayDatos){
