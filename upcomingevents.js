@@ -1,4 +1,4 @@
-fetch("https://amazing-events-back.up.railway.app/event")
+fetch("https://amazing-events-back.onrender.com/event")
 .then((res)=>res.json()) //me lo convierte a json
 .then((data)=> {
 console.log(data);
